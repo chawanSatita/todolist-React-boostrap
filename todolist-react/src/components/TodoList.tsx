@@ -103,7 +103,7 @@ const TodoList = () => {
                                             onChange={() => toggleComplete(todo.id)}
                                         /></Col>
                                     <Col xs={9}>  
-                                    <p className='fs-ุ'><span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>{todo.text}</span></p>
+                                    <p className='fs-6'><span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>{todo.text}</span></p>
                                     </Col>
                                     <Col><Button type='button' onChange={() => editTodo(todo.id, prompt("Edit Todo?", todo.text) || todo.text)}>Edit</Button></Col>
                                     <Col><Button type='button' variant='danger' onClick={() => removeTodo(todo.id)}>Remove</Button></Col>
